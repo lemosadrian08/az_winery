@@ -1,0 +1,75 @@
+form{
+    margin: 1em;
+    background:$color2;  
+    display: grid;
+    grid-template-rows: (4,1fr);
+    .form__conteiner--name{
+        display: flex;
+        .conteiner__input{
+            padding: 0.5em;
+            margin: 0.5em;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.7em;
+            width: 100%;
+            background: $color2;
+            border: 0;
+            border-bottom: 3px solid $color1;
+            color: $color4;
+            outline: none;
+        }
+    }
+    .form__conteiner--email{
+        display: flex;
+        .conteiner__input{
+            padding: 0.5em;
+            margin: 0.5em;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.7em;
+            width: 100%;
+            background: $color2;
+            border: 0;
+            border-bottom: 3px solid $color1;
+            color: $color4;
+            outline: none;
+        }
+    }
+    .form__conteiner--message{
+        display: flex;
+        .conteiner__input--message{
+            padding: 0.5em;
+            margin: 0.5em;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.7em;
+            width: 100%;
+            background: $color2;
+            border: 0;
+            border-bottom: 3px solid $color1;
+            color: $color4;
+            outline: none;
+            resize: none;
+         }
+    }
+    .form__conteiner--submit{
+        justify-content: center;
+        display: flex;
+        .conteiner__submit{
+            color: $color4;
+            background: $color1;
+            padding: 0.5em;
+            margin: 1em;
+            border: none;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.7em;
+            resize: none;
+            &:hover{
+                background: $color3;
+                transform: scale(1.2);
+             }
+         }
+     }
+
+ }
+
+ ::placeholder{
+    color: $color5;
+ }

@@ -1,0 +1,43 @@
+header {
+    grid-area: header;
+    display: grid;
+    background: $color2;
+    grid-template-areas: 
+    "logo"
+    "nav"; 
+    nav {
+        grid-area: nav; 
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            
+            li {
+                list-style: none;
+                align-items: center;
+                padding: 0 0.2em;
+                &:hover {
+                        background: $color3;
+                        transform: scale(1.2);
+                     }
+                
+                a {
+                    text-decoration: none;
+                    color: $color4;
+                }
+            }
+        }
+    }
+    .conteiner--logo {
+        grid-area: logo;
+        display: flex;
+        justify-content: center; 
+        .logo {
+            width: 3em; 
+            filter: invert(100%); 
+            &:hover {
+                filter: invert(0%);
+            }   
+        }
+    }
+}

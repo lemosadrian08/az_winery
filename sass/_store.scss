@@ -1,0 +1,57 @@
+.h1--store {
+    margin-bottom: 0.5em;
+}
+
+.main__conteiner--store {
+    @include flex-row-wrap-center;
+
+    .conteiner__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $color2;
+        margin-bottom: 1em;
+        width: 14em;
+
+        .card__image {
+            height: 22em;
+            display: flex;
+            justify-content: center;
+
+            .card--image {
+                object-fit: contain;
+            }
+        }
+
+        .card__info {
+            .title--card {
+                margin: 0 0.5em;
+                height: 3.5em;
+            }
+
+            .text--card {
+                margin: 0 0.5em;
+                height: 11em;
+
+            }
+
+            .form--card {
+                .button--card {
+                    color: $color4;
+                    background: $color1;
+                    padding: 0.5em;
+                    margin: 1em;
+                    border: none;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 0.7em;
+
+                    &:hover {
+                        background: $color3;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+    }
+}

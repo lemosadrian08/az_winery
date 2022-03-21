@@ -1,0 +1,14 @@
+$socialnetworking: (
+ facebook: #0004ff,
+ twitter: #00aeff,
+ instagram: #ff00bf,
+);
+
+@each $sn, $color in $socialnetworking{
+    .footer__icon--#{$sn}:hover { 
+        filter: drop-shadow(0px 0px 11px $color); 
+
+    }
+
+
+}

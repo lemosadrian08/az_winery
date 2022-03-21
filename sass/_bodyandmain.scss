@@ -1,0 +1,26 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    font-family: 'Oswald', sans-serif; 
+    background-color: $color1;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: $color4;
+ }
+ main{
+    grid-area: main;
+ }
+ h1{
+    text-align: center;
+ }
+ h3, h4{
+    padding: 0 2.5%;
+ }
+ p{
+   text-align: justify;
+   @extend h3;
+  
+}

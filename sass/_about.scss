@@ -1,0 +1,36 @@
+.main__conteiner--about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .conteiner__card--about {
+        display: flex;
+        flex-direction: column;
+        width: 12em;
+        background: $color2;
+        margin: 1em;
+        .card__image--about {
+            display: flex;
+            padding-top: 1em;
+            justify-content: center;
+            .image--about {
+                height: 14em;  
+                width: 10em;
+                object-fit: cover;
+            }
+        }
+        .card__info--about {
+            .cardtitle--about {
+                margin-top: 0.5em;
+                font-size: 1.5em;
+                height: 1.5em;
+                text-align: center;
+            }
+            .cardtext--about {
+                margin: 0 0.5em;
+                height: 18em;
+            }
+        }
+
+    }
+}

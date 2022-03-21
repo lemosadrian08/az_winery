@@ -1,0 +1,386 @@
+/*$color1: rgb(220, 20, 60);
+$color2: rgb(161, 13, 43);
+$color3: rgb(114, 10, 31);
+$color4: rgb(255, 255, 255);
+$color5: rgb(204, 204, 204);*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  font-family: 'Oswald', sans-serif;
+  background-color: #f1e9da;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  color: black; }
+
+main {
+  grid-area: main; }
+
+h1 {
+  text-align: center; }
+
+h3, p, h4 {
+  padding: 0 2.5%; }
+
+p {
+  text-align: justify; }
+
+header {
+  grid-area: header;
+  display: grid;
+  background: #b6985a;
+  grid-template-areas: "logo" "nav"; }
+  header nav {
+    grid-area: nav; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      header nav ul li {
+        list-style: none;
+        align-items: center;
+        padding: 0 0.2em; }
+        header nav ul li:hover {
+          background: #9b814e;
+          transform: scale(1.2); }
+        header nav ul li a {
+          text-decoration: none;
+          color: black; }
+  header .conteiner--logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; }
+    header .conteiner--logo .logo {
+      width: 3em;
+      filter: invert(100%); }
+      header .conteiner--logo .logo:hover {
+        filter: invert(0%); }
+
+footer {
+  grid-area: footer;
+  background: #b6985a;
+  display: grid;
+  grid-template-rows: 2fr 1fr; }
+  footer .footer--right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .footer--right .ul--footer {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: end; }
+      footer .footer--right .ul--footer .footer__icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 2em;
+        margin-right: 1em; }
+
+.footer__icon--facebook:hover {
+  filter: drop-shadow(0px 0px 11px #0004ff); }
+
+.footer__icon--twitter:hover {
+  filter: drop-shadow(0px 0px 11px #00aeff); }
+
+.footer__icon--instagram:hover {
+  filter: drop-shadow(0px 0px 11px #ff00bf); }
+
+.parallax-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/winery.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .parallax-1 .blur {
+    position: absolute;
+    background-color: inherit;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 0 0.2em; }
+    .parallax-1 .blur .parallaxtitles {
+      font-size: 2.5rem;
+      color: white; }
+
+.parallax-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/wine.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .parallax-2 .blur {
+    position: absolute;
+    background-color: inherit;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 0 0.2em; }
+    .parallax-2 .blur .parallaxtitles {
+      font-size: 2.5rem;
+      color: white; }
+
+.parallax-3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/grapes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .parallax-3 .blur {
+    position: absolute;
+    background-color: inherit;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 0 0.2em; }
+    .parallax-3 .blur .parallaxtitles {
+      font-size: 2.5rem;
+      color: white; }
+
+.splitter {
+  padding: 3.5rem; }
+
+.main__conteiner--wines {
+  display: flex;
+  flex-direction: column; }
+
+.conteiner__images,
+.conteiner__video--wines,
+.conteiner__video--winery {
+  width: 100%;
+  height: auto;
+  margin: 0.5em 0em;
+  border: 0.3em solid #b6985a; }
+
+.h1--store {
+  margin-bottom: 0.5em; }
+
+.main__conteiner--store {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .main__conteiner--store .conteiner__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b6985a;
+    margin-bottom: 1em;
+    width: 14em; }
+    .main__conteiner--store .conteiner__card .card__image {
+      height: 22em;
+      display: flex;
+      justify-content: center; }
+      .main__conteiner--store .conteiner__card .card__image .card--image {
+        object-fit: contain; }
+    .main__conteiner--store .conteiner__card .card__info .title--card {
+      margin: 0 0.5em;
+      height: 3.5em; }
+    .main__conteiner--store .conteiner__card .card__info .text--card {
+      margin: 0 0.5em;
+      height: 11em; }
+    .main__conteiner--store .conteiner__card .card__info .form--card .button--card {
+      color: black;
+      background: #f1e9da;
+      padding: 0.5em;
+      margin: 1em;
+      border: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7em; }
+      .main__conteiner--store .conteiner__card .card__info .form--card .button--card:hover {
+        background: #9b814e;
+        transform: scale(1.1); }
+
+form {
+  margin: 1em;
+  background: #b6985a;
+  display: grid;
+  grid-template-rows: 4, 1fr; }
+  form .form__conteiner--name {
+    display: flex; }
+    form .form__conteiner--name .conteiner__input {
+      padding: 0.5em;
+      margin: 0.5em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7em;
+      width: 100%;
+      background: #b6985a;
+      border: 0;
+      border-bottom: 3px solid #f1e9da;
+      color: black;
+      outline: none; }
+  form .form__conteiner--email {
+    display: flex; }
+    form .form__conteiner--email .conteiner__input {
+      padding: 0.5em;
+      margin: 0.5em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7em;
+      width: 100%;
+      background: #b6985a;
+      border: 0;
+      border-bottom: 3px solid #f1e9da;
+      color: black;
+      outline: none; }
+  form .form__conteiner--message {
+    display: flex; }
+    form .form__conteiner--message .conteiner__input--message {
+      padding: 0.5em;
+      margin: 0.5em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7em;
+      width: 100%;
+      background: #b6985a;
+      border: 0;
+      border-bottom: 3px solid #f1e9da;
+      color: black;
+      outline: none;
+      resize: none; }
+  form .form__conteiner--submit {
+    justify-content: center;
+    display: flex; }
+    form .form__conteiner--submit .conteiner__submit {
+      color: black;
+      background: #f1e9da;
+      padding: 0.5em;
+      margin: 1em;
+      border: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7em;
+      resize: none; }
+      form .form__conteiner--submit .conteiner__submit:hover {
+        background: #9b814e;
+        transform: scale(1.2); }
+
+::placeholder {
+  color: #5f5f5f; }
+
+.main__conteiner--about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .main__conteiner--about .conteiner__card--about {
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    background: #b6985a;
+    margin: 1em; }
+    .main__conteiner--about .conteiner__card--about .card__image--about {
+      display: flex;
+      padding-top: 1em;
+      justify-content: center; }
+      .main__conteiner--about .conteiner__card--about .card__image--about .image--about {
+        height: 14em;
+        width: 10em;
+        object-fit: cover; }
+    .main__conteiner--about .conteiner__card--about .card__info--about .cardtitle--about {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+      height: 1.5em;
+      text-align: center; }
+    .main__conteiner--about .conteiner__card--about .card__info--about .cardtext--about {
+      margin: 0 0.5em;
+      height: 18em; }
+
+@media (min-width: 768px) {
+  body {
+    background: #f1e9da;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%; }
+  header nav ul li {
+    padding: 0.3em; }
+  .main__conteiner--wines,
+  .main__conteiner--winery,
+  .main__conteiner--wines {
+    width: 95%;
+    margin: auto; }
+  .main__conteiner--store {
+    justify-content: space-evenly;
+    align-content: flex-start; }
+  .conteiner__card {
+    width: 14em;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+  .card--image {
+    width: 13em; }
+  main .main__conteiner--about .conteiner__card--about {
+    display: flex;
+    flex-direction: column;
+    width: 21em; }
+  main .main__conteiner--about .conteiner__card--about .card__image--about .image--about {
+    width: 18em; }
+  main .main__conteiner--about .conteiner__card--about .card__info--about .cardtext--about {
+    height: 12em; }
+  footer {
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr; }
+  footer .footer--right {
+    justify-content: end; } }
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-area: header;
+    background: #b6985a;
+    grid-template-areas: "logo nav"; }
+  header .conteiner--logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: start; }
+  header .conteiner--logo .logo {
+    width: 2.75em; }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5em;
+    margin-left: 0%; }
+  header nav ul li {
+    padding: 0em 0.5em;
+    transition: 0.5s; }
+  header nav {
+    grid-area: nav;
+    display: flex; }
+  .main__conteiner--wines {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    object-fit: cover; }
+  .conteiner__images {
+    width: 450px;
+    transition: 1s; }
+  .conteiner__images:hover {
+    transform: scale(1.2); }
+  form {
+    margin: 1em 20%; }
+  main .main__conteiner--about .conteiner__card--about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 41em; }
+  main .main__conteiner--about .conteiner__card--about .card__image--about .image--about {
+    padding-bottom: 1em; } }
