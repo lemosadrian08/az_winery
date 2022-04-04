@@ -1,0 +1,19 @@
+.conteiner__video--winery {
+    width: 100%;
+    height: auto;
+    margin: 0.5em 0em;
+    border: 0.3em solid $color2;
+ }
+.container{
+    padding-left: 0em;
+    padding-right: 0em;
+    .row{
+        margin: 0;
+        padding: 0;
+        .col-xs-12{
+            padding: 0;
+        }
+
+    }
+
+}

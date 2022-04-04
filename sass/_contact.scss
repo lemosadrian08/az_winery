@@ -3,9 +3,9 @@ form{
     background:$color2;  
     display: grid;
     grid-template-rows: (4,1fr);
-    .form__conteiner--name{
+    .form__container--name{
         display: flex;
-        .conteiner__input{
+        .container__input{
             padding: 0.5em;
             margin: 0.5em;
             font-family: 'Oswald', sans-serif;
@@ -18,9 +18,9 @@ form{
             outline: none;
         }
     }
-    .form__conteiner--email{
+    .form__container--email{
         display: flex;
-        .conteiner__input{
+        .container__input{
             padding: 0.5em;
             margin: 0.5em;
             font-family: 'Oswald', sans-serif;
@@ -33,9 +33,9 @@ form{
             outline: none;
         }
     }
-    .form__conteiner--message{
+    .form__container--message{
         display: flex;
-        .conteiner__input--message{
+        .container__input--message{
             padding: 0.5em;
             margin: 0.5em;
             font-family: 'Oswald', sans-serif;
@@ -49,10 +49,10 @@ form{
             resize: none;
          }
     }
-    .form__conteiner--submit{
+    .form__container--submit{
         justify-content: center;
         display: flex;
-        .conteiner__submit{
+        .container__submit{
             color: $color4;
             background: $color1;
             padding: 0.5em;

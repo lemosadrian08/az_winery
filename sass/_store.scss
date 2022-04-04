@@ -1,42 +1,40 @@
 .h1--store {
     margin-bottom: 0.5em;
 }
-
-.main__conteiner--store {
+@mixin flex-row-wrap-center{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__container--store {
     @include flex-row-wrap-center;
-
-    .conteiner__card {
+    .container__card--store {
+        background: $color2;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        background: $color2;
+        width: 90%;
         margin-bottom: 1em;
-        width: 14em;
-
-        .card__image {
-            height: 22em;
+        .card__image--store {
             display: flex;
             justify-content: center;
-
-            .card--image {
-                object-fit: contain;
+            .image--store {
+                width: 6em;
+                height: 20em;
+                object-fit: cover;
             }
         }
-
-        .card__info {
-            .title--card {
-                margin: 0 0.5em;
-                height: 3.5em;
+        .card__info--store {
+            .cardtile--store {
+                text-align: justify;
+                padding: 0 0.5em;
             }
-
-            .text--card {
-                margin: 0 0.5em;
-                height: 11em;
+            .cardtext--store {
+                padding: 0.5em;
+                font-size: 0.9em;
 
             }
-
-            .form--card {
-                .button--card {
+            .form--store {
+                .button--store {
                     color: $color4;
                     background: $color1;
                     padding: 0.5em;

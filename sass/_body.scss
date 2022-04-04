@@ -1,0 +1,39 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; }
+
+body{
+   display: grid;
+   grid-template-areas: 
+   "header"
+   "main"
+   "footer";
+   font-family: 'Oswald', sans-serif;
+   background-color: $color1;
+   font-size: 1.75rem;
+   color: $color4;
+}
+main{
+   grid-area: main;
+}
+h1{
+   text-align: center;
+   margin-top: 1em;
+}
+.h1 {
+   margin-top: 1em;
+   font-size: 2em;
+   font-weight: bold;
+}
+.h3{
+   font-weight: bold;
+   font-size: 1.17em;
+}
+h3 , h4{
+   padding: 0 0.5rem;
+}
+p{
+   text-align: justify;
+   padding: 1.5rem;
+}

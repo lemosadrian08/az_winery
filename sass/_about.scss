@@ -1,12 +1,12 @@
-.main__conteiner--about {
+.main__container--about {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    .conteiner__card--about {
+    .container__card--about {
         display: flex;
         flex-direction: column;
-        width: 12em;
+        width: 90%;
         background: $color2;
         margin: 1em;
         .card__image--about {
@@ -15,7 +15,7 @@
             justify-content: center;
             .image--about {
                 height: 14em;  
-                width: 10em;
+                width: 85%;
                 object-fit: cover;
             }
         }
@@ -23,12 +23,13 @@
             .cardtitle--about {
                 margin-top: 0.5em;
                 font-size: 1.5em;
-                height: 1.5em;
                 text-align: center;
             }
             .cardtext--about {
                 margin: 0 0.5em;
-                height: 18em;
+                padding: 0;
+                padding-bottom: 1em;
+
             }
         }
 
